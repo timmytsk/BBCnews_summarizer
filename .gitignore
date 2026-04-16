@@ -1,0 +1,5 @@
+/.venv/
+/backend/news_sum_b/
+.idea
+.venv
+/backend/model/bart/

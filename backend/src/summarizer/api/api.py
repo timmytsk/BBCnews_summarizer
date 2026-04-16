@@ -1,11 +1,13 @@
 from fastapi import APIRouter
-from summarizer.parser.parser import BBCNewsParser
+
+from summarizer.parser.parser import RTNewsParser
 from summarizer.script.summ import SummarizerProcessor
 from summarizer.schemas.api_schemas import SummarizeResponse, SummarizeReport
 
 csv_router = APIRouter()
 
-news = BBCNewsParser()
+# news = BBCNewsParser()
+news = RTNewsParser()
 summ = SummarizerProcessor()
 
 ## Парсинг и вывод всех новостей разом

@@ -8,12 +8,12 @@ class NewsSummarizerApp:
 
     def __init__(self, api_base_url: str = "http://0.0.0.0:8000"):
         self.api_base_url = api_base_url
-        st.set_page_config(page_title='Сводка последних новостей BBCNews Russia', layout='centered')
+        st.set_page_config(page_title='Сводка последних новостей RT News', layout='centered')
 
 
     def run(self) -> None:
-        st.title('Сводка последних новостей BBCNews Russia')
-        st.markdown('Узнаём что творится в мире по версии BBCNews')
+        st.title('Сводка последних новостей RT News')
+        st.markdown('Узнаём что творится в мире по версии RT News')
         if st.button('Получить новости'):
             with st.spinner("Получаем новости"):
                 try:
